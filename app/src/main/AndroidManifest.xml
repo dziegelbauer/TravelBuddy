@@ -15,6 +15,11 @@
         android:configChanges="keyboardHidden|orientation"
         tools:targetApi="31">
         <activity
+            android:name=".UI.ExcursionDetails"
+            android:label="Excursion Details"
+            android:parentActivityName=".UI.VacationDetails"
+            android:exported="false" />
+        <activity
             android:name=".UI.VacationDetails"
             android:exported="false"
             android:label="Vacation Details"

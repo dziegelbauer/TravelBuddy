@@ -65,15 +65,15 @@ public class VacationDetails extends AppCompatActivity {
         );
 
         FloatingActionButton btnDetails = findViewById(R.id.btnExcursionDetails);
-//        btnDetails.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(VacationDetails.this, ExcursionDetails.class);
-//                intent.putExtra("vacationID", currentVacation.getVacationID());
-//                intent.putExtra("excursionDate", Date.from(Instant.now()));
-//                startActivity(intent);
-//            }
-//        });
+        btnDetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(VacationDetails.this, ExcursionDetails.class);
+                intent.putExtra("vacationID", currentVacation.getVacationID());
+                intent.putExtra("excursionDate", Date.from(Instant.now()));
+                startActivity(intent);
+            }
+        });
 
         vacationNameControl = findViewById(R.id.vacationName);
         vacationNameControl.setText(currentVacation.getVacationName());
@@ -199,12 +199,12 @@ public class VacationDetails extends AppCompatActivity {
     }
 
     private void populateRecycler() {
-//        RecyclerView recyclerView = findViewById(R.id.excursionRecyclerView);
-//        List<Excursion> allExcursions = repository.getAssociatedExcursions(currentVacation.getVacationID());
-//        final ExcursionAdaptor excursionAdaptor = new ExcursionAdaptor(this);
-//        recyclerView.setAdapter(excursionAdaptor);
-//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-//        excursionAdaptor.setExcursions(allExcursions);
+        RecyclerView recyclerView = findViewById(R.id.excursionRecyclerView);
+        List<Excursion> allExcursions = repository.getAssociatedExcursions(currentVacation.getVacationID());
+        final ExcursionAdaptor excursionAdaptor = new ExcursionAdaptor(this);
+        recyclerView.setAdapter(excursionAdaptor);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        excursionAdaptor.setExcursions(allExcursions);
     }
 
     @Override
