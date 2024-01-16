@@ -1,8 +1,10 @@
-package org.ziegelbauer.travelbuddy;
+package org.ziegelbauer.travelbuddy.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import org.ziegelbauer.travelbuddy.R;
 
 public class MainActivity extends AppCompatActivity {
 
