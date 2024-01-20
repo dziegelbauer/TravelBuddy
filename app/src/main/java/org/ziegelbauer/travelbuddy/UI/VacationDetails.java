@@ -70,7 +70,7 @@ public class VacationDetails extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(VacationDetails.this, ExcursionDetails.class);
                 intent.putExtra("vacationID", currentVacation.getVacationID());
-                intent.putExtra("excursionDate", Date.from(Instant.now()));
+                intent.putExtra("excursionDate", sdf.format(Date.from(Instant.now())));
                 startActivity(intent);
             }
         });
