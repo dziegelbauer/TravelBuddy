@@ -36,7 +36,3 @@ The menu at the top gives the user the following options:
 
 ## SUPPORTED ANDROID VERSIONS
 TravelBuddy requires a minimum Android version of Android 8 (SDK level 26). It has been built and tested against Android 14 (SDK level 34).
-
-## GITLAB REPO
-The Gitlab repository for this project is located at https://gitlab.com/wgu-gitlab-environment/student-repos/dziegel1/d308-mobile-application-development-android.git .
-
